@@ -37,8 +37,4 @@ Your client_secret.json will look like the following:
   "client_x509_cert_url": "your cert url"
 }
 ```
-What you're going to need to do is take your 
-```json 
-"client_meail": "your client email"
-```
-and share your Google Sheet with this user, giving them editing rights. If you do not do this, you will not have access to your sheet.
+What you're going to need to do is take your **`"client_meail": "your client email"`** and share your Google Sheet with this user, giving them editing rights. If you do not do this, you will not have access to your sheet.
