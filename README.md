@@ -3,7 +3,6 @@ This is a formatter to take data from Turn14.com's product data CSV export and i
 
 ## Dependencies
 1. [GSpread](https://github.com/burnash/gspread)
-1. [Requests](https://github.com/requests/requests)
 1. [oauth2client](https://github.com/google/oauth2client)  
 ### Installing Dependencies
 Simply run the following command:
