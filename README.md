@@ -8,7 +8,7 @@ I made this before Turn14.com released their REST API, but I feel this is still 
 ## GSpread API
 This script uses the gspread package to work with Google sheets. Be sure to inclued "client_secret.json" in your working directory.  
 If you're unsure on how to get your client_secret.json, please follow this tutorial completely: [Using OAuth2 for Authorization](http://gspread.readthedocs.io/en/latest/oauth2.html)  
-Be sure to rename your credentials as client_secret.json, as that's how this script retreives the file.  
+Be sure to rename your credentials file as client_secret.json, as that's how this script retreives the file.  
 Your client_secret.json will look like the following:
 ```json
 {
