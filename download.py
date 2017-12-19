@@ -1,6 +1,5 @@
 import csv
 import sys
-import time
 import requests
 from zipfile import ZipFile
 import glob
