@@ -1,2 +1,2 @@
 # ignoring json files for credentials
-*.json
+# *.json
