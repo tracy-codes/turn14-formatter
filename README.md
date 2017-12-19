@@ -12,12 +12,7 @@ pip install -r requirements.txt
 ```
 
 ## Product Data Loadsheet
-For speed's sake I did not include a download function to automatically download the product data loadsheet.  
-
-You may can run the following: **`python download.py`** to download the loadsheet without needing to go to turn14.com.  
-**You will need to edit turn14_creds.json to your Turn14.com login or else download.py will not work.**  
-
-I would recommend manually downloading the loadsheeet before starting (it takes a few minutes sometimes and I don't like waiting for a script to stop running).  
+Go to [Turn14](turn14.com), go to data, and download Product Data Loadsheet. Unzip the file into your working folder.
 
 ## GSpread API
 This script uses the gspread package to work with Google sheets. Be sure to include "client_secret.json" in your working directory.  
