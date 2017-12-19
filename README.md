@@ -14,6 +14,10 @@ pip install -r requirements.txt
 ## Product Data Loadsheet
 Go to [Turn14](turn14.com), go to data, and download Product Data Loadsheet. Unzip the file into your working folder.
 
+## Shopify CSV Import Template
+Use the following as a template for your Google Sheet:
+[Shopify Import Template](https://docs.google.com/spreadsheets/d/1MzTcc7LXwM0p0kZE3tjKCZG0LRWAc0DoPb1R51TsR34/edit?usp=sharing)
+
 ## GSpread API
 This script uses the gspread package to work with Google sheets. Be sure to include "client_secret.json" in your working directory.  
 If you're unsure on how to get your client_secret.json, please follow this tutorial completely: [Using OAuth2 for Authorization](http://gspread.readthedocs.io/en/latest/oauth2.html)  
