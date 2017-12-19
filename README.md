@@ -20,9 +20,9 @@ You may can run the following: **`python download.py`** to download the loadshee
 I would recommend manually downloading the loadsheeet before starting (it takes a few minutes sometimes and I don't like waiting for a script to stop running).  
 
 ## GSpread API
-This script uses the gspread package to work with Google sheets. Be sure to inclued "client_secret.json" in your working directory.  
+This script uses the gspread package to work with Google sheets. Be sure to include "client_secret.json" in your working directory.  
 If you're unsure on how to get your client_secret.json, please follow this tutorial completely: [Using OAuth2 for Authorization](http://gspread.readthedocs.io/en/latest/oauth2.html)  
-Be sure to rename your credentials file as client_secret.json, as that's how this script retreives the file.  
+Rename your credentials file to client_secret.json, as that's how this script retreives the file.  
 Your client_secret.json will look like the following:
 ```json
 {
