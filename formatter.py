@@ -3,17 +3,22 @@ import csv
 from oauth2client.service_account import ServiceAccountCredentials
 import requests
 
+# opens turnfourteen.csv (this is what comes from turn14.com when you do a product data csv export)
 csv_file = list(csv.reader(open("turnfourteen.csv", "r"), delimiter=","))
-def get_data(s):
-    br = s
-    for row in csv_file:
-        if br in row[0]:
 
+# main method
+def get_data(s):
+    # set brand name we are looking for to br
+    br = s
+    # loop through all rows in csv_file
+    for row in csv_file:
+        # if brand exists in ""
+        if br in row[0]:
             # use creds to create a client to interact with the Google Drive API
             scope = ['https://spreadsheets.google.com/feeds']
             g_creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
             client = gspread.authorize(g_creds)
-            
+
             book = client.open("T14")
             sheet = book.get_worksheet(2)
             row_count = sheet.row_count
