@@ -1,10 +1,12 @@
 # Turn14 Formatter
 This is a formatter to take data from Turn14.com's product data CSV export and import it to a google sheet that is formatted for Shopify's CSV import process.
+
 ## Product Data Loadsheet
 For speed's sake I did not include a download function to automatically download the product data loadsheet. You may use download.py to download the loadsheet without needing to go to turn14.com.  
 Edit turn14_creds.json to your Turn14.com login and then use download.py to download the loadsheet.  
 I would recommend manually downloading the loadsheeet before starting (it takes a few minutes sometimes and I don't like waiting for a script to stop running).  
 I made this before Turn14.com released their REST API, but I feel this is still useful to those who do not have experience with APIs.  
+
 ## GSpread API
 This script uses the gspread package to work with Google sheets. Be sure to inclued "client_secret.json" in your working directory.  
 If you're unsure on how to get your client_secret.json, please follow this tutorial completely: [Using OAuth2 for Authorization](http://gspread.readthedocs.io/en/latest/oauth2.html)  
@@ -29,7 +31,8 @@ What you're going to need to do is take your
 "client_meail": "your client email"
 ```
 and share your Google Sheet with this user, giving them editing rights. If you do not do this, you will not have access to your sheet.
+
 ## Dependencies
-1. GSpread
-1. Requests
-1. oauth2client
+1. [GSpread](https://github.com/burnash/gspread)
+1. [Requests](https://github.com/requests/requests)
+1. [oauth2client](https://github.com/google/oauth2client)
