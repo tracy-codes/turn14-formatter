@@ -1,5 +1,5 @@
 # Turn14 Formatter
-This is a formatter to take data from Turn14.com's product data CSV export and import it to a google sheet that is formatted for Shopify's CSV import process.
+This is a formatter to take data from Turn14.com's product data CSV export and import it to a google sheet that is formatted for Shopify's CSV import process. I made this before Turn14.com released their REST API, but I feel this is still useful to those who do not have experience with APIs.
 
 ## Dependencies
 1. [GSpread](https://github.com/burnash/gspread)
@@ -16,8 +16,8 @@ For speed's sake I did not include a download function to automatically download
 
 You may can run the following: **`python download.py`** to download the loadsheet without needing to go to turn14.com.  
 **You will need to edit turn14_creds.json to your Turn14.com login or else download.py will not work.**  
+
 I would recommend manually downloading the loadsheeet before starting (it takes a few minutes sometimes and I don't like waiting for a script to stop running).  
-I made this before Turn14.com released their REST API, but I feel this is still useful to those who do not have experience with APIs.
 
 ## GSpread API
 This script uses the gspread package to work with Google sheets. Be sure to inclued "client_secret.json" in your working directory.  
